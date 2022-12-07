@@ -1,7 +1,20 @@
-public class Pessoa {
+public abstract class Pessoa {
 
     private int id_pessoa, cpf;
     private String nome;
+    private Endereco end;
+    
+
+    public Pessoa() {
+    }
+
+
+    public Pessoa(int id_pessoa, int cpf, String nome, Endereco end) {
+        this.id_pessoa = id_pessoa;
+        this.cpf = cpf;
+        this.nome = nome;
+        this.end = end;
+    }
 
 
     public int getId_pessoa() {
@@ -25,6 +38,27 @@ public class Pessoa {
     public String getNome(){
         return this.nome;
     }
+
+
+    public Endereco getEnd() {
+        return this.end;
+    }
+
+    public void setEnd(Endereco end) {
+        this.end = end;
+    }
+
+
+    @Override
+    public String toString() {
+        return "{" +
+            " id_pessoa='" + getId_pessoa() + "'" +
+            ", cpf='" + getCpf() + "'" +
+            ", nome='" + getNome() + "'" +
+            ", end='" + getEnd() + "'" +
+            "}";
+    }
+
 
     
 }
