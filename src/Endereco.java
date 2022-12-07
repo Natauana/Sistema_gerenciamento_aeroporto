@@ -3,6 +3,16 @@ public class Endereco {
     private String rua;
     private String bairro;
 
+    public Aeroporto getAero() {
+        return this.aero;
+    }
+
+    public void setAero(Aeroporto aero) {
+        this.aero = aero;
+    }
+    private Aeroporto aero;
+
+
     public Endereco() {
     }
 

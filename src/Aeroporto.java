@@ -5,6 +5,9 @@ public class Aeroporto{
     private Voo vo1;
     private Aviao aeronava;
 
+    public Aeroporto() {
+    }
+
     public Aviao getAeronava() {
         return this.aeronava;
     }
@@ -47,3 +50,4 @@ public class Aeroporto{
 
     
 }
+ 

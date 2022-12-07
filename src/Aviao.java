@@ -6,6 +6,9 @@ public class Aviao {
     private String poutronas;
     private int total_passageiros;
 
+    public Aviao() {
+    }
+
     public double getCarga() {
         return this.carga;
     }
