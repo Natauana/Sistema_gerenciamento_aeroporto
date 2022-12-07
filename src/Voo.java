@@ -2,6 +2,9 @@ public class Voo {
     private double DiaVoo;
     private  double horarioVoo;
 
+    public Voo() {
+    }
+
 
     public double getDiaVoo() {
         return this.DiaVoo;
