@@ -2,28 +2,17 @@ public class Endereco {
     private int casa_numero;
     private String rua;
     private String bairro;
-
-    public Aeroporto getAero() {
-        return this.aero;
-    }
-
-    public void setAero(Aeroporto aero) {
-        this.aero = aero;
-    }
     private Aeroporto aero;
-
 
     public Endereco() {
     }
 
-
-    public Endereco(int casa_numero, String rua, String bairro) {
+    public Endereco(int casa_numero, String rua, String bairro, Aeroporto aero) {
         this.casa_numero = casa_numero;
         this.rua = rua;
         this.bairro = bairro;
+        this.aero = aero;
     }
-
-
 
     public int getCasa_numero() {
         return this.casa_numero;
@@ -48,6 +37,15 @@ public class Endereco {
     public void setBairro(String bairro) {
         this.bairro = bairro;
     }
+
+    public Aeroporto getAero() {
+        return this.aero;
+    }
+
+    public void setAero(Aeroporto aero) {
+        this.aero = aero;
+    }
+    
 
 
 }

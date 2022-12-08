@@ -5,6 +5,25 @@ public class Aviao {
     private String cia_aerea;
     private String poutronas;
     private int total_passageiros;
+    private cod_piloto codp;
+
+    public Aviao(double carga, int id, String cod_aviao, String cia_aerea, String poutronas, int total_passageiros, cod_piloto codp) {
+        this.carga = carga;
+        this.id = id;
+        this.cod_aviao = cod_aviao;
+        this.cia_aerea = cia_aerea;
+        this.poutronas = poutronas;
+        this.total_passageiros = total_passageiros;
+        this.codp = codp;
+    }
+
+    public cod_piloto getCodp() {
+        return this.codp;
+    }
+
+    public void setCodp(cod_piloto codp) {
+        this.codp = codp;
+    }
 
     public Aviao() {
     }
