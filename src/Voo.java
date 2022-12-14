@@ -1,15 +1,17 @@
 public class Voo {
     private double DiaVoo;
     private  double horarioVoo;
+    private double horarioPouso;
     private Aviao aviaoo;
 
-    public Voo() {
-    }
-
-    public Voo(double DiaVoo, double horarioVoo, Aviao aviaoo) {
+    public Voo(double DiaVoo, double horarioVoo, double horarioPouso, Aviao aviaoo) {
         this.DiaVoo = DiaVoo;
         this.horarioVoo = horarioVoo;
+        this.horarioPouso = horarioPouso;
         this.aviaoo = aviaoo;
+    }
+
+    public Voo() {
     }
 
 
@@ -29,6 +31,14 @@ public class Voo {
         this.horarioVoo = horarioVoo;
     }
 
+    public double getHorarioPouso() {
+        return this.horarioPouso;
+    }
+
+    public void setHorarioPouso(double horarioPouso) {
+        this.horarioPouso = horarioPouso;
+    }
+
     public Aviao getAviaoo() {
         return this.aviaoo;
     }
@@ -36,6 +46,7 @@ public class Voo {
     public void setAviaoo(Aviao aviaoo) {
         this.aviaoo = aviaoo;
     }
+
    
     
 }

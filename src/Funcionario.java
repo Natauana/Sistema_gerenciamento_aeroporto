@@ -1,15 +1,17 @@
 
 public class Funcionario extends Pessoa {
 
+    private Double horas_trabalho;
+    private Agencia agencia;
+
+    public Funcionario(Double horas_trabalho, Agencia agencia) {
+        this.horas_trabalho = horas_trabalho;
+        this.agencia = agencia;
+    }
+
+
     public Funcionario() {
     }
-
-
-    public Funcionario(Double horas_trabalho) {
-        this.horas_trabalho = horas_trabalho;
-    }
-
-    public Double horas_trabalho;
 
 
     public Double getHoras_trabalho() {
@@ -20,7 +22,15 @@ public class Funcionario extends Pessoa {
         this.horas_trabalho = horas_trabalho;
     }
 
-  
+    public Agencia getAgencia() {
+        return this.agencia;
+    }
+
+    public void setAgencia(Agencia agencia) {
+        this.agencia = agencia;
+    }
+
+   
 
    
 }

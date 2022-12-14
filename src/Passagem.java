@@ -1,11 +1,9 @@
-public class Passagem extends Agencia {
+public abstract class Passagem  {
     private int id;
     private int num_passagem;
     private String assento;
     private double dt_viagem;
-
-    public Passagem() {
-    }
+    private double preco;
 
     public int getId() {
         return this.id;
@@ -39,12 +37,13 @@ public class Passagem extends Agencia {
         this.dt_viagem = dt_viagem;
     }
 
+    public double getPreco() {
+        return this.preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
     
 }
-
-    public Passagem(int id, int num_passagem, String assento, double dt_viagem) {
-        this.id = id;
-        this.num_passagem = num_passagem;
-        this.assento = assento;
-        this.dt_viagem = dt_viagem;
-    }

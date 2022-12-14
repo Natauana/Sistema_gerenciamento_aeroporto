@@ -4,26 +4,19 @@ public class Aviao {
     private String cod_aviao;
     private String cia_aerea;
     private String poutronas;
-    private int total_passageiros;
-    private cod_piloto codp;
+    private int poltronas_ocupadas;
+    private int poltronas_vazias;
 
-    public Aviao(double carga, int id, String cod_aviao, String cia_aerea, String poutronas, int total_passageiros, cod_piloto codp) {
+    public Aviao(double carga, int id, String cod_aviao, String cia_aerea, String poutronas, int poltronas_ocupadas, int poltronas_vazias) {
         this.carga = carga;
         this.id = id;
         this.cod_aviao = cod_aviao;
         this.cia_aerea = cia_aerea;
         this.poutronas = poutronas;
-        this.total_passageiros = total_passageiros;
-        this.codp = codp;
+        this.poltronas_ocupadas = poltronas_ocupadas;
+        this.poltronas_vazias = poltronas_vazias;
     }
 
-    public cod_piloto getCodp() {
-        return this.codp;
-    }
-
-    public void setCodp(cod_piloto codp) {
-        this.codp = codp;
-    }
 
     public Aviao() {
     }
@@ -68,12 +61,20 @@ public class Aviao {
         this.poutronas = poutronas;
     }
 
-    public int getTotal_passageiros() {
-        return this.total_passageiros;
+    public int getPoltronas_ocupadas() {
+        return this.poltronas_ocupadas;
     }
 
-    public void setTotal_passageiros(int total_passageiros) {
-        this.total_passageiros = total_passageiros;
+    public void setPoltronas_ocupadas(int poltronas_ocupadas) {
+        this.poltronas_ocupadas = poltronas_ocupadas;
+    }
+
+    public int getPoltronas_vazias() {
+        return this.poltronas_vazias;
+    }
+
+    public void setPoltronas_vazias(int poltronas_vazias) {
+        this.poltronas_vazias = poltronas_vazias;
     }
     
 }
