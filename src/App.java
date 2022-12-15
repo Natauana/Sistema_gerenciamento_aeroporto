@@ -56,6 +56,7 @@ public class App {
                 sc.nextLine();
                 System.out.println("Escreva o numero do Passaporte: ");
                 passg.setPassaporte(sc.nextLine()); 
+                break;
             }
             if(opcao==2)
             {
@@ -87,10 +88,12 @@ public class App {
                         System.exit(0);
                     }
                 }
+                break;
 
             }
             if(opcao==3){
                 System.exit(0);
+                break;
             }
         }
 
